@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4164B742523488100CDF36B /* HealthKit.framework */; };
+		C4A182FA252CA70500F45488 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = C4A182F9252CA70500F45488 /* quotes.json */; };
+		C4A182FE252CA72E00F45488 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A182FD252CA72E00F45488 /* QuoteService.swift */; };
+		C4A18303252CA76100F45488 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A18302252CA76100F45488 /* Quote.swift */; };
 		C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */; };
 		C4A723302521F37F00F92F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232F2521F37F00F92F0D /* ContentView.swift */; };
 		C4A723322521F38000F92F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A723312521F38000F92F0D /* Assets.xcassets */; };
@@ -14,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4164B722523488000CDF36B /* QuoteShuffle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuoteShuffle.entitlements; sourceTree = "<group>"; };
+		C4164B742523488100CDF36B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C4A182F9252CA70500F45488 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		C4A182FD252CA72E00F45488 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		C4A18302252CA76100F45488 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		C4A7232A2521F37F00F92F0D /* QuoteShuffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteShuffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShuffleApp.swift; sourceTree = "<group>"; };
 		C4A7232F2521F37F00F92F0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +36,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4164B732523488100CDF36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4164B742523488100CDF36B /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A182F8252CA6D400F45488 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4A182F9252CA70500F45488 /* quotes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4A182FC252CA71C00F45488 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C4A182FD252CA72E00F45488 /* QuoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C4A18301252CA75600F45488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4A18302252CA76100F45488 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4A18307252CE64F00F45488 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */,
+				C4A7232F2521F37F00F92F0D /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C4A18308252CE65600F45488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A723312521F38000F92F0D /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C4A723212521F37F00F92F0D = {
 			isa = PBXGroup;
 			children = (
 				C4A7232C2521F37F00F92F0D /* QuoteShuffle */,
 				C4A7232B2521F37F00F92F0D /* Products */,
+				C4164B732523488100CDF36B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +112,13 @@
 		C4A7232C2521F37F00F92F0D /* QuoteShuffle */ = {
 			isa = PBXGroup;
 			children = (
-				C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */,
-				C4A7232F2521F37F00F92F0D /* ContentView.swift */,
-				C4A723312521F38000F92F0D /* Assets.xcassets */,
 				C4A723362521F38000F92F0D /* Info.plist */,
+				C4A18308252CE65600F45488 /* Supporting Files */,
+				C4A18307252CE64F00F45488 /* Main */,
+				C4A18301252CA75600F45488 /* Model */,
+				C4A182FC252CA71C00F45488 /* Service */,
+				C4A182F8252CA6D400F45488 /* Data */,
+				C4164B722523488000CDF36B /* QuoteShuffle.entitlements */,
 				C4A723332521F38000F92F0D /* Preview Content */,
 			);
 			path = QuoteShuffle;
@@ -128,6 +191,7 @@
 			files = (
 				C4A723352521F38000F92F0D /* Preview Assets.xcassets in Resources */,
 				C4A723322521F38000F92F0D /* Assets.xcassets in Resources */,
+				C4A182FA252CA70500F45488 /* quotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A182FE252CA72E00F45488 /* QuoteService.swift in Sources */,
 				C4A723302521F37F00F92F0D /* ContentView.swift in Sources */,
 				C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */,
+				C4A18303252CA76100F45488 /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8QHCL647Y;
@@ -289,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8QHCL647Y;
