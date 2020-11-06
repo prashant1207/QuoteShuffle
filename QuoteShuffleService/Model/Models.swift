@@ -9,6 +9,12 @@ import Foundation
 
 public struct Quote: Codable {
     public let quote, author: String
+
+    public init() {
+        quote = ""
+        author = ""
+    }
+
     public init(quote: String, author: String) {
         self.quote = quote
         self.author = author

@@ -9,14 +9,13 @@ import SwiftUI
 import QuoteShuffleService
 
 struct ContentView: View {
-    @State var quote: Quote = Quote(quote: "Whatever we expect with confidence becomes our own self-fulfilling prophecy.", author: "Brian Tracy")
-    @State var showingAlert = false
-    @State var bottomSheetShown = false
-    @State var backgroundImage = Resource.backgroundImage.randomElement() ?? "1"
-    @State var quoteFromUrl: Quote? = nil
+    @State var quote: Quote = Quote()
+    @State var showingAlert: Bool = false
+    @State var bottomSheetShown: Bool = false
+    @State var backgroundImage: String = "1"
+    @State var quoteFromUrl: Quote?
 
     let viewModel = ContentViewModel()
-    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -77,7 +76,7 @@ struct ContentView: View {
     }
 
     func onAppear() {
-        refreshQuote(false)
+        configure()
     }
 
     func onOpenUrl(_ url: URL) {
@@ -87,6 +86,11 @@ struct ContentView: View {
 
         quote = parsed
         quoteFromUrl = parsed
+    }
+
+    func configure() {
+        updateTheme()
+        refreshQuote(false)
     }
 
     func updateTheme() {
