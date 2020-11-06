@@ -44,7 +44,7 @@ struct ContentView: View {
                     Spacer()
                     Image(systemName: "chevron.up")
                         .foregroundColor(Resource.Shades.buttonForeground)
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 48, trailing: 0))
                 }.allowsHitTesting(false)
 
                 if showingAlert {
@@ -56,7 +56,7 @@ struct ContentView: View {
                     .scaledToFill()
             )
             .edgesIgnoringSafeArea([.top, .bottom])
-            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+            .frame(maxHeight: .infinity, alignment: .center)
             .disabled(bottomSheetShown)
 
             BottomSheetView(isOpen: $bottomSheetShown, maxHeight: 280) {

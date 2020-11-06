@@ -18,6 +18,15 @@ struct ContentView: View {
                 Spacer()
                 QuoteView(quote: quote)
                 Spacer()
+                Text("Tap anywhere to shuffle")
+                    .font(.system(size: 18))
+                    .foregroundColor(Color.white)
+                Text("app allows you to share and save quotes")
+                    .font(.system(size: 14))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 64, trailing: 16))
             }.onTapGesture {
                 refreshQuote()
             }
@@ -42,30 +51,6 @@ struct ContentView: View {
 
     func refreshQuote() {
         quote = service.getRandomQuote()
-    }
-}
-
-struct QuoteView: View {
-    var quote: Quote
-    var body: some View {
-        VStack{
-            Image(systemName: "quote.bubble")
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
-            Text(quote.quote)
-                .font(.system(size: 24))
-                .fontWeight(.regular)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .multilineTextAlignment(.leading)
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
-            Text(quote.author == "" ? "Unknown" : quote.author)
-                .fontWeight(.thin)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .multilineTextAlignment(.leading)
-        }
-        .foregroundColor(.white)
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

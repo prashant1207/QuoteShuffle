@@ -5,12 +5,16 @@
 //  Created by Prashant Tiwari on 06/11/20.
 //
 
-import Foundation
 import SwiftUI
 
-struct GestureView: View {
-    var onTapAction:((Tap) -> Void)
-    var onSwipeAction:((Swipe) -> Void)
+public struct GestureView: View {
+    public var onTapAction:((Tap) -> Void)
+    public var onSwipeAction:((Swipe) -> Void)
+
+    public init(onTapAction: @escaping ((Tap) -> Void), onSwipeAction: @escaping ((Swipe) -> Void)) {
+        self.onTapAction = onTapAction
+        self.onSwipeAction = onSwipeAction
+    }
 
     struct OverlayRectangle: View {
         var body: some View {
@@ -19,7 +23,7 @@ struct GestureView: View {
         }
     }
 
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .center, spacing: 0) {
             OverlayRectangle()
                 .frame(height: 160, alignment: .top)

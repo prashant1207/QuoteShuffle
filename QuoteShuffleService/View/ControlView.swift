@@ -5,12 +5,16 @@
 //  Created by Prashant Tiwari on 06/11/20.
 //
 
-import Foundation
 import SwiftUI
 
-struct ControlView: View {
-    var onShareTapped: (() -> Void)
-    var onDownloadTapped: (() -> Void)
+public struct ControlView: View {
+    public var onShareTapped: (() -> Void)
+    public var onDownloadTapped: (() -> Void)
+
+    public init(onShareTapped: @escaping (() -> Void), onDownloadTapped: @escaping (() -> Void)) {
+        self.onShareTapped = onShareTapped
+        self.onDownloadTapped = onDownloadTapped
+    }
 
     struct ControlButtonView: View {
         var icon: String
@@ -34,7 +38,7 @@ struct ControlView: View {
         }
     }
 
-    var body: some View {
+    public var body: some View {
         VStack {
             VStack {
                 ControlButtonView(icon: "square.and.arrow.up", text: "Share") {

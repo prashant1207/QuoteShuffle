@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
-import QuoteShuffleService
 
-struct QuoteView: View {
-    var quote: Quote
-    var body: some View {
+public struct QuoteView: View {
+    public var quote: Quote
+
+    public init(quote: Quote) {
+        self.quote = quote
+    }
+
+    public var body: some View {
         VStack{
             Image(systemName: "quote.bubble")
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -32,8 +36,8 @@ struct QuoteView: View {
     }
 }
 
-struct QuoteShuffleLogoView: View {
-    var body: some View {
+public struct QuoteShuffleLogoView: View {
+    public var body: some View {
         VStack {
             Image("logo")
                 .resizable()

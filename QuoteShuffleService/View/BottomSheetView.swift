@@ -4,6 +4,7 @@
 //
 //  Created by Prashant Tiwari on 08/10/20.
 //
+
 import SwiftUI
 
 fileprivate enum BottomViewConstants {
@@ -14,7 +15,7 @@ fileprivate enum BottomViewConstants {
     static let minHeightRatio: CGFloat = 0
 }
 
-struct BottomSheetView<Content: View>: View {
+public struct BottomSheetView<Content: View>: View {
     @Binding var isOpen: Bool
 
     let maxHeight: CGFloat
@@ -38,14 +39,14 @@ struct BottomSheetView<Content: View>: View {
         }
     }
 
-    init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
+    public init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
         self.minHeight = maxHeight * BottomViewConstants.minHeightRatio
         self.maxHeight = maxHeight
         self.content = content()
         self._isOpen = isOpen
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
                 self.indicator.padding()

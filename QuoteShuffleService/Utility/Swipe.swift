@@ -8,19 +8,19 @@
 import Foundation
 import SwiftUI
 
-enum Swipe {
+public enum Swipe {
     case up
     case down
     case left
     case right
     case unknown
 
-    enum Threshold {
+    public enum Threshold {
         static let horizontal: CGFloat = 30
         static let vertical: CGFloat = 100
     }
 
-    static func swipeType(_ translation: CGSize) -> Swipe {
+    public static func swipeType(_ translation: CGSize) -> Swipe {
         var result: Swipe = .unknown
         if translation.width < 0 && translation.height > -Swipe.Threshold.horizontal && translation.height < Swipe.Threshold.horizontal {
             result = .left
@@ -36,7 +36,7 @@ enum Swipe {
     }
 }
 
-enum Tap {
+public enum Tap {
     case top
     case left
     case right

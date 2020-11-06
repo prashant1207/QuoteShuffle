@@ -5,16 +5,21 @@
 //  Created by Prashant Tiwari on 06/11/20.
 //
 
-import Foundation
 import SwiftUI
 
-struct FloatingAlert: View {
+public struct FloatingAlert: View {
     @Binding var showingNotice: Bool
     @State var opacity: Double = 0
-    var icon: String
-    var text: String
-    
-    var body: some View {
+    public var icon: String
+    public var text: String
+
+    public init(showingNotice: Binding<Bool>, icon: String, text: String) {
+        self._showingNotice = showingNotice
+        self.icon = icon
+        self.text = text
+    }
+
+    public var body: some View {
         VStack (alignment: .center, spacing: 0) {
             Image(systemName: icon)
                 .font(.system(size: 64, weight: .regular))

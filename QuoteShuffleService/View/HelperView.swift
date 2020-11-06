@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct AnimatedGradientView: View {
+public struct AnimatedGradientView: View {
     @State private var gradientA: [Color] = [.blue, .black]
     @State private var gradientB: [Color] = [.blue, .black]
 
     @State private var firstPlane: Bool = true
-
     let animation = Animation.easeInOut(duration: 5).repeatForever(autoreverses: true)
+    public init() { }
     func setGradient(gradient: [Color]) {
         if firstPlane {
             gradientB = gradient
@@ -24,7 +24,7 @@ struct AnimatedGradientView: View {
         firstPlane = !firstPlane
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             Rectangle()
                 .fill(LinearGradient(gradient: Gradient(colors: self.gradientA), startPoint: UnitPoint(x: 0, y: 0), endPoint: UnitPoint(x: 0, y: 1)))
@@ -40,11 +40,11 @@ struct AnimatedGradientView: View {
     }
 }
 
-struct StoryView: View {
+public struct StoryView: View {
     @State var height: CGFloat = 0
 
     let animation = Animation.easeInOut(duration: 10).repeatForever(autoreverses: true)
-    var body: some View {
+    public var body: some View {
         Rectangle()
             .fill(Color.white)
             .edgesIgnoringSafeArea(.all)

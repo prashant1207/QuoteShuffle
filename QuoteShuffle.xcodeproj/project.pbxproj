@@ -11,19 +11,20 @@
 		C482326725555F5300920E06 /* QuoteShuffleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; };
 		C482326825555F5300920E06 /* QuoteShuffleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C482327825556F3400920E06 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327725556F3400920E06 /* ContentViewModel.swift */; };
-		C482327C2555736D00920E06 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327B2555736D00920E06 /* GestureView.swift */; };
-		C48232802555737900920E06 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327F2555737900920E06 /* ControlView.swift */; };
-		C48232842555739500920E06 /* FloatingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48232832555739500920E06 /* FloatingAlertView.swift */; };
-		C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EB252F2ACB004457AB /* QuoteView.swift */; };
-		C48529EF252F2AF3004457AB /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EE252F2AF3004457AB /* HelperView.swift */; };
-		C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529F1252F2BED004457AB /* BottomSheetView.swift */; };
-		C48D6BA625541747006CBB3F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BA525541747006CBB3F /* Resource.swift */; };
+		C482328C2555764200920E06 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EB252F2ACB004457AB /* QuoteView.swift */; };
+		C48232912555764600920E06 /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EE252F2AF3004457AB /* HelperView.swift */; };
+		C48232962555764A00920E06 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529F1252F2BED004457AB /* BottomSheetView.swift */; };
+		C482329B2555764E00920E06 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327B2555736D00920E06 /* GestureView.swift */; };
+		C48232A02555765100920E06 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327F2555737900920E06 /* ControlView.swift */; };
+		C48232A52555765600920E06 /* FloatingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48232832555739500920E06 /* FloatingAlertView.swift */; };
+		C48232AA2555776600920E06 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A1830E252CE9B600F45488 /* Swipe.swift */; };
+		C48232B02555776A00920E06 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4549425346E7600E17579 /* Colors.swift */; };
+		C48232B52555776D00920E06 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BA525541747006CBB3F /* Resource.swift */; };
 		C48D6BB025543350006CBB3F /* ShuflerrClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BAF25543350006CBB3F /* ShuflerrClipApp.swift */; };
 		C48D6BB225543350006CBB3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BB125543350006CBB3F /* ContentView.swift */; };
 		C48D6BB425543351006CBB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D6BB325543351006CBB3F /* Assets.xcassets */; };
 		C48D6BB725543351006CBB3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D6BB625543351006CBB3F /* Preview Assets.xcassets */; };
 		C48D6BBC25543351006CBB3F /* ShuflerrClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = C48D6BAD25543350006CBB3F /* ShuflerrClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A1830E252CE9B600F45488 /* Swipe.swift */; };
 		C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */; };
 		C4A723302521F37F00F92F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232F2521F37F00F92F0D /* ContentView.swift */; };
 		C4A723322521F38000F92F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A723312521F38000F92F0D /* Assets.xcassets */; };
@@ -35,7 +36,6 @@
 		C4B4548325346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */; };
 		C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */; };
 		C4B4548725346ADB00E17579 /* QuoteShuffleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4B4547725346ADA00E17579 /* QuoteShuffleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C4B4549525346E7600E17579 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4549425346E7600E17579 /* Colors.swift */; };
 		C4B454A1253480A900E17579 /* QuoteShuffleService.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B4549F253480A900E17579 /* QuoteShuffleService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4B454A4253480A900E17579 /* QuoteShuffleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; };
 		C4B454A5253480A900E17579 /* QuoteShuffleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -242,7 +242,7 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		C48529EA252F2AB3004457AB /* View */ = {
+		C4823289255575D800920E06 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C48529EB252F2ACB004457AB /* QuoteView.swift */,
@@ -331,8 +331,6 @@
 			children = (
 				C482327625556F2300920E06 /* ViewModel */,
 				C404D874254AECBC0069C49E /* Configurator */,
-				C48529EA252F2AB3004457AB /* View */,
-				C4A1830D252CE9A800F45488 /* Utility */,
 				C4A723362521F38000F92F0D /* Info.plist */,
 				C4A18308252CE65600F45488 /* Supporting Files */,
 				C4A18307252CE64F00F45488 /* Main */,
@@ -365,6 +363,8 @@
 		C4B4549E253480A900E17579 /* QuoteShuffleService */ = {
 			isa = PBXGroup;
 			children = (
+				C4A1830D252CE9A800F45488 /* Utility */,
+				C4823289255575D800920E06 /* View */,
 				C4B454C52534838B00E17579 /* Data */,
 				C4B454C42534838600E17579 /* Model */,
 				C4B454C12534838100E17579 /* Service */,
@@ -587,19 +587,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48232842555739500920E06 /* FloatingAlertView.swift in Sources */,
-				C4B4549525346E7600E17579 /* Colors.swift in Sources */,
 				C404D876254AECCD0069C49E /* Configurator.swift in Sources */,
-				C482327C2555736D00920E06 /* GestureView.swift in Sources */,
-				C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */,
-				C48D6BA625541747006CBB3F /* Resource.swift in Sources */,
-				C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */,
-				C48529EF252F2AF3004457AB /* HelperView.swift in Sources */,
 				C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */,
 				C482327825556F3400920E06 /* ContentViewModel.swift in Sources */,
-				C48232802555737900920E06 /* ControlView.swift in Sources */,
 				C4A723302521F37F00F92F0D /* ContentView.swift in Sources */,
-				C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */,
 				C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +609,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48232AA2555776600920E06 /* Swipe.swift in Sources */,
+				C48232B02555776A00920E06 /* Colors.swift in Sources */,
 				C4B454B6253482EA00E17579 /* QuoteService.swift in Sources */,
+				C48232B52555776D00920E06 /* Resource.swift in Sources */,
+				C48232A52555765600920E06 /* FloatingAlertView.swift in Sources */,
+				C48232962555764A00920E06 /* BottomSheetView.swift in Sources */,
+				C482329B2555764E00920E06 /* GestureView.swift in Sources */,
+				C482328C2555764200920E06 /* QuoteView.swift in Sources */,
+				C48232912555764600920E06 /* HelperView.swift in Sources */,
+				C48232A02555765100920E06 /* ControlView.swift in Sources */,
 				C4B454AF253480D600E17579 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-enum Resource {
-    static let backgroundImage = ["1","2","3","4","5"]
+public enum Resource {
+    public static let backgroundImage = ["1","2","3","4","5"]
 
-    enum Shades {
-        static let backgroundColor: Color = Color.fromRGB(28)
-        static let secondaryBackground: Color = Color.fromRGB(171)
-        static let buttonColor: Color = Color.fromRGB(51)
-        static let buttonForeground: Color = Color.fromRGB(219)
+    public enum Shades {
+        public static let backgroundColor: Color = Color.fromRGB(28)
+        public static let secondaryBackground: Color = Color.fromRGB(171)
+        public static let buttonColor: Color = Color.fromRGB(51)
+        public static let buttonForeground: Color = Color.fromRGB(219)
     }
 }
 
-extension Color {
+public extension Color {
     static func fromRGB(_ red: Double, _ green: Double, _ blue: Double) -> Color {
         return Color.init(red: red/255, green: green/255, blue: blue/255)
     }
