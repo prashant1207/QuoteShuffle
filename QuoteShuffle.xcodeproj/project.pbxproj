@@ -7,23 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C404D876254AECCD0069C49E /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C404D875254AECCD0069C49E /* Configurator.swift */; };
 		C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4164B742523488100CDF36B /* HealthKit.framework */; };
-		C4A182FA252CA70500F45488 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = C4A182F9252CA70500F45488 /* quotes.json */; };
-		C4A182FE252CA72E00F45488 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A182FD252CA72E00F45488 /* QuoteService.swift */; };
-		C4A18303252CA76100F45488 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A18302252CA76100F45488 /* Quote.swift */; };
+		C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EB252F2ACB004457AB /* QuoteView.swift */; };
+		C48529EF252F2AF3004457AB /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EE252F2AF3004457AB /* HelperView.swift */; };
+		C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529F1252F2BED004457AB /* BottomSheetView.swift */; };
+		C48D6BA625541747006CBB3F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BA525541747006CBB3F /* Resource.swift */; };
+		C48D6BB025543350006CBB3F /* ShuflerrClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BAF25543350006CBB3F /* ShuflerrClipApp.swift */; };
+		C48D6BB225543350006CBB3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D6BB125543350006CBB3F /* ContentView.swift */; };
+		C48D6BB425543351006CBB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D6BB325543351006CBB3F /* Assets.xcassets */; };
+		C48D6BB725543351006CBB3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D6BB625543351006CBB3F /* Preview Assets.xcassets */; };
+		C48D6BBC25543351006CBB3F /* ShuflerrClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = C48D6BAD25543350006CBB3F /* ShuflerrClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A1830E252CE9B600F45488 /* Swipe.swift */; };
 		C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */; };
 		C4A723302521F37F00F92F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7232F2521F37F00F92F0D /* ContentView.swift */; };
 		C4A723322521F38000F92F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A723312521F38000F92F0D /* Assets.xcassets */; };
 		C4A723352521F38000F92F0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A723342521F38000F92F0D /* Preview Assets.xcassets */; };
+		C4B4547925346ADA00E17579 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4547825346ADA00E17579 /* WidgetKit.framework */; };
+		C4B4547B25346ADA00E17579 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4547A25346ADA00E17579 /* SwiftUI.framework */; };
+		C4B4547E25346ADA00E17579 /* QuoteShuffleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4547D25346ADA00E17579 /* QuoteShuffleWidget.swift */; };
+		C4B4548125346ADB00E17579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B4548025346ADB00E17579 /* Assets.xcassets */; };
+		C4B4548325346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */; };
+		C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */; };
+		C4B4548725346ADB00E17579 /* QuoteShuffleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4B4547725346ADA00E17579 /* QuoteShuffleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4B4549525346E7600E17579 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4549425346E7600E17579 /* Colors.swift */; };
+		C4B454A1253480A900E17579 /* QuoteShuffleService.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B4549F253480A900E17579 /* QuoteShuffleService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B454A4253480A900E17579 /* QuoteShuffleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; };
+		C4B454A5253480A900E17579 /* QuoteShuffleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4B454AF253480D600E17579 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B454AE253480D600E17579 /* Models.swift */; };
+		C4B454B6253482EA00E17579 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A182FD252CA72E00F45488 /* QuoteService.swift */; };
+		C4B454BC2534837900E17579 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = C4A182F9252CA70500F45488 /* quotes.json */; };
+		C4FF03DE2550705F00EB36B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF03DD2550705F00EB36B3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C4580A1D2554396B00A9741B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4549C253480A900E17579;
+			remoteInfo = QuoteShuffleService;
+		};
+		C48D6BBA25543351006CBB3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C48D6BAC25543350006CBB3F;
+			remoteInfo = ShuflerrClip;
+		};
+		C4B4548525346ADB00E17579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4547625346ADA00E17579;
+			remoteInfo = QuoteShuffleWidgetExtension;
+		};
+		C4B454A2253480A900E17579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4549C253480A900E17579;
+			remoteInfo = QuoteShuffleService;
+		};
+		C4B454AC253480BD00E17579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4549C253480A900E17579;
+			remoteInfo = QuoteShuffleService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C48D6BC025543352006CBB3F /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				C48D6BBC25543351006CBB3F /* ShuflerrClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4548825346ADB00E17579 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4B4548725346ADB00E17579 /* QuoteShuffleWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B454A9253480A900E17579 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C4B454A5253480A900E17579 /* QuoteShuffleService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C404D875254AECCD0069C49E /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		C4164B722523488000CDF36B /* QuoteShuffle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuoteShuffle.entitlements; sourceTree = "<group>"; };
 		C4164B742523488100CDF36B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C48529EB252F2ACB004457AB /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		C48529EE252F2AF3004457AB /* HelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperView.swift; sourceTree = "<group>"; };
+		C48529F1252F2BED004457AB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		C48D6BA525541747006CBB3F /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		C48D6BAD25543350006CBB3F /* ShuflerrClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuflerrClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48D6BAF25543350006CBB3F /* ShuflerrClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuflerrClipApp.swift; sourceTree = "<group>"; };
+		C48D6BB125543350006CBB3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C48D6BB325543351006CBB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C48D6BB625543351006CBB3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C48D6BB825543351006CBB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48D6BB925543351006CBB3F /* ShuflerrClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShuflerrClip.entitlements; sourceTree = "<group>"; };
 		C4A182F9252CA70500F45488 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 		C4A182FD252CA72E00F45488 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
-		C4A18302252CA76100F45488 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		C4A1830E252CE9B600F45488 /* Swipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe.swift; sourceTree = "<group>"; };
 		C4A7232A2521F37F00F92F0D /* QuoteShuffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteShuffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A7232D2521F37F00F92F0D /* QuoteShuffleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShuffleApp.swift; sourceTree = "<group>"; };
@@ -31,50 +138,104 @@
 		C4A723312521F38000F92F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4A723342521F38000F92F0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4A723362521F38000F92F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B4547725346ADA00E17579 /* QuoteShuffleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuoteShuffleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B4547825346ADA00E17579 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C4B4547A25346ADA00E17579 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C4B4547D25346ADA00E17579 /* QuoteShuffleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShuffleWidget.swift; sourceTree = "<group>"; };
+		C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = QuoteShuffleWidget.intentdefinition; sourceTree = "<group>"; };
+		C4B4548025346ADB00E17579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4B4548225346ADB00E17579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B4549425346E7600E17579 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C4B4549D253480A900E17579 /* QuoteShuffleService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuoteShuffleService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B4549F253480A900E17579 /* QuoteShuffleService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuoteShuffleService.h; sourceTree = "<group>"; };
+		C4B454A0253480A900E17579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B454AE253480D600E17579 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C4FF03DD2550705F00EB36B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C48D6BAA25543350006CBB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A723272521F37F00F92F0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */,
+				C4B454A4253480A900E17579 /* QuoteShuffleService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4547425346ADA00E17579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4547B25346ADA00E17579 /* SwiftUI.framework in Frameworks */,
+				C4B4547925346ADA00E17579 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4549A253480A900E17579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C404D874254AECBC0069C49E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C404D875254AECCD0069C49E /* Configurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		C4164B732523488100CDF36B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C4164B742523488100CDF36B /* HealthKit.framework */,
+				C4B4547825346ADA00E17579 /* WidgetKit.framework */,
+				C4B4547A25346ADA00E17579 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C4A182F8252CA6D400F45488 /* Data */ = {
+		C48529EA252F2AB3004457AB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C4A182F9252CA70500F45488 /* quotes.json */,
+				C48529EB252F2ACB004457AB /* QuoteView.swift */,
+				C48529EE252F2AF3004457AB /* HelperView.swift */,
+				C48529F1252F2BED004457AB /* BottomSheetView.swift */,
 			);
-			path = Data;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C4A182FC252CA71C00F45488 /* Service */ = {
+		C48D6BAE25543350006CBB3F /* ShuflerrClip */ = {
 			isa = PBXGroup;
 			children = (
-				C4A182FD252CA72E00F45488 /* QuoteService.swift */,
+				C48D6BAF25543350006CBB3F /* ShuflerrClipApp.swift */,
+				C48D6BB125543350006CBB3F /* ContentView.swift */,
+				C48D6BB325543351006CBB3F /* Assets.xcassets */,
+				C48D6BB825543351006CBB3F /* Info.plist */,
+				C48D6BB925543351006CBB3F /* ShuflerrClip.entitlements */,
+				C48D6BB525543351006CBB3F /* Preview Content */,
 			);
-			path = Service;
+			path = ShuflerrClip;
 			sourceTree = "<group>";
 		};
-		C4A18301252CA75600F45488 /* Model */ = {
+		C48D6BB525543351006CBB3F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C4A18302252CA76100F45488 /* Quote.swift */,
+				C48D6BB625543351006CBB3F /* Preview Assets.xcassets */,
 			);
-			path = Model;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C4A18307252CE64F00F45488 /* Main */ = {
@@ -98,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				C4A1830E252CE9B600F45488 /* Swipe.swift */,
+				C4B4549425346E7600E17579 /* Colors.swift */,
+				C48D6BA525541747006CBB3F /* Resource.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -106,6 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				C4A7232C2521F37F00F92F0D /* QuoteShuffle */,
+				C4B4547C25346ADA00E17579 /* QuoteShuffleWidget */,
+				C4B4549E253480A900E17579 /* QuoteShuffleService */,
+				C48D6BAE25543350006CBB3F /* ShuflerrClip */,
 				C4A7232B2521F37F00F92F0D /* Products */,
 				C4164B732523488100CDF36B /* Frameworks */,
 			);
@@ -115,6 +281,9 @@
 			isa = PBXGroup;
 			children = (
 				C4A7232A2521F37F00F92F0D /* QuoteShuffle.app */,
+				C4B4547725346ADA00E17579 /* QuoteShuffleWidgetExtension.appex */,
+				C4B4549D253480A900E17579 /* QuoteShuffleService.framework */,
+				C48D6BAD25543350006CBB3F /* ShuflerrClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,13 +291,12 @@
 		C4A7232C2521F37F00F92F0D /* QuoteShuffle */ = {
 			isa = PBXGroup;
 			children = (
+				C404D874254AECBC0069C49E /* Configurator */,
+				C48529EA252F2AB3004457AB /* View */,
 				C4A1830D252CE9A800F45488 /* Utility */,
 				C4A723362521F38000F92F0D /* Info.plist */,
 				C4A18308252CE65600F45488 /* Supporting Files */,
 				C4A18307252CE64F00F45488 /* Main */,
-				C4A18301252CA75600F45488 /* Model */,
-				C4A182FC252CA71C00F45488 /* Service */,
-				C4A182F8252CA6D400F45488 /* Data */,
 				C4164B722523488000CDF36B /* QuoteShuffle.entitlements */,
 				C4A723332521F38000F92F0D /* Preview Content */,
 			);
@@ -143,9 +311,86 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C4B4547C25346ADA00E17579 /* QuoteShuffleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4547D25346ADA00E17579 /* QuoteShuffleWidget.swift */,
+				C4B4547F25346ADA00E17579 /* QuoteShuffleWidget.intentdefinition */,
+				C4B4548025346ADB00E17579 /* Assets.xcassets */,
+				C4B4548225346ADB00E17579 /* Info.plist */,
+				C4FF03DD2550705F00EB36B3 /* Constants.swift */,
+			);
+			path = QuoteShuffleWidget;
+			sourceTree = "<group>";
+		};
+		C4B4549E253480A900E17579 /* QuoteShuffleService */ = {
+			isa = PBXGroup;
+			children = (
+				C4B454C52534838B00E17579 /* Data */,
+				C4B454C42534838600E17579 /* Model */,
+				C4B454C12534838100E17579 /* Service */,
+				C4B4549F253480A900E17579 /* QuoteShuffleService.h */,
+				C4B454A0253480A900E17579 /* Info.plist */,
+			);
+			path = QuoteShuffleService;
+			sourceTree = "<group>";
+		};
+		C4B454C12534838100E17579 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C4A182FD252CA72E00F45488 /* QuoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C4B454C42534838600E17579 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4B454AE253480D600E17579 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4B454C52534838B00E17579 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4A182F9252CA70500F45488 /* quotes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C4B45498253480A900E17579 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B454A1253480A900E17579 /* QuoteShuffleService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		C48D6BAC25543350006CBB3F /* ShuflerrClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C48D6BBD25543352006CBB3F /* Build configuration list for PBXNativeTarget "ShuflerrClip" */;
+			buildPhases = (
+				C48D6BA925543350006CBB3F /* Sources */,
+				C48D6BAA25543350006CBB3F /* Frameworks */,
+				C48D6BAB25543350006CBB3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4580A1E2554396B00A9741B /* PBXTargetDependency */,
+			);
+			name = ShuflerrClip;
+			productName = ShuflerrClip;
+			productReference = C48D6BAD25543350006CBB3F /* ShuflerrClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		C4A723292521F37F00F92F0D /* QuoteShuffle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A723392521F38000F92F0D /* Build configuration list for PBXNativeTarget "QuoteShuffle" */;
@@ -153,15 +398,57 @@
 				C4A723262521F37F00F92F0D /* Sources */,
 				C4A723272521F37F00F92F0D /* Frameworks */,
 				C4A723282521F37F00F92F0D /* Resources */,
+				C4B4548825346ADB00E17579 /* Embed App Extensions */,
+				C4B454A9253480A900E17579 /* Embed Frameworks */,
+				C48D6BC025543352006CBB3F /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4B4548625346ADB00E17579 /* PBXTargetDependency */,
+				C4B454A3253480A900E17579 /* PBXTargetDependency */,
+				C48D6BBB25543351006CBB3F /* PBXTargetDependency */,
 			);
 			name = QuoteShuffle;
 			productName = QuoteShuffle;
 			productReference = C4A7232A2521F37F00F92F0D /* QuoteShuffle.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C4B4547625346ADA00E17579 /* QuoteShuffleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B4548B25346ADB00E17579 /* Build configuration list for PBXNativeTarget "QuoteShuffleWidgetExtension" */;
+			buildPhases = (
+				C4B4547325346ADA00E17579 /* Sources */,
+				C4B4547425346ADA00E17579 /* Frameworks */,
+				C4B4547525346ADA00E17579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4B454AD253480BD00E17579 /* PBXTargetDependency */,
+			);
+			name = QuoteShuffleWidgetExtension;
+			productName = QuoteShuffleWidgetExtension;
+			productReference = C4B4547725346ADA00E17579 /* QuoteShuffleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C4B4549C253480A900E17579 /* QuoteShuffleService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B454A6253480A900E17579 /* Build configuration list for PBXNativeTarget "QuoteShuffleService" */;
+			buildPhases = (
+				C4B45498253480A900E17579 /* Headers */,
+				C4B45499253480A900E17579 /* Sources */,
+				C4B4549A253480A900E17579 /* Frameworks */,
+				C4B4549B253480A900E17579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteShuffleService;
+			productName = QuoteShuffleService;
+			productReference = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,11 +456,21 @@
 		C4A723222521F37F00F92F0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					C48D6BAC25543350006CBB3F = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					C4A723292521F37F00F92F0D = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					C4B4547625346ADA00E17579 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					C4B4549C253480A900E17579 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -191,39 +488,175 @@
 			projectRoot = "";
 			targets = (
 				C4A723292521F37F00F92F0D /* QuoteShuffle */,
+				C4B4547625346ADA00E17579 /* QuoteShuffleWidgetExtension */,
+				C4B4549C253480A900E17579 /* QuoteShuffleService */,
+				C48D6BAC25543350006CBB3F /* ShuflerrClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C48D6BAB25543350006CBB3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48D6BB725543351006CBB3F /* Preview Assets.xcassets in Resources */,
+				C48D6BB425543351006CBB3F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A723282521F37F00F92F0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4A723352521F38000F92F0D /* Preview Assets.xcassets in Resources */,
 				C4A723322521F38000F92F0D /* Assets.xcassets in Resources */,
-				C4A182FA252CA70500F45488 /* quotes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4547525346ADA00E17579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4548125346ADB00E17579 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4549B253480A900E17579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B454BC2534837900E17579 /* quotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C48D6BA925543350006CBB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48D6BB225543350006CBB3F /* ContentView.swift in Sources */,
+				C48D6BB025543350006CBB3F /* ShuflerrClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4A723262521F37F00F92F0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A182FE252CA72E00F45488 /* QuoteService.swift in Sources */,
+				C4B4549525346E7600E17579 /* Colors.swift in Sources */,
+				C404D876254AECCD0069C49E /* Configurator.swift in Sources */,
+				C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */,
+				C48D6BA625541747006CBB3F /* Resource.swift in Sources */,
+				C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */,
+				C48529EF252F2AF3004457AB /* HelperView.swift in Sources */,
+				C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */,
 				C4A723302521F37F00F92F0D /* ContentView.swift in Sources */,
 				C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */,
 				C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */,
-				C4A18303252CA76100F45488 /* Quote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4547325346ADA00E17579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4547E25346ADA00E17579 /* QuoteShuffleWidget.swift in Sources */,
+				C4B4548325346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */,
+				C4FF03DE2550705F00EB36B3 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B45499253480A900E17579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B454B6253482EA00E17579 /* QuoteService.swift in Sources */,
+				C4B454AF253480D600E17579 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C4580A1E2554396B00A9741B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4549C253480A900E17579 /* QuoteShuffleService */;
+			targetProxy = C4580A1D2554396B00A9741B /* PBXContainerItemProxy */;
+		};
+		C48D6BBB25543351006CBB3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C48D6BAC25543350006CBB3F /* ShuflerrClip */;
+			targetProxy = C48D6BBA25543351006CBB3F /* PBXContainerItemProxy */;
+		};
+		C4B4548625346ADB00E17579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4547625346ADA00E17579 /* QuoteShuffleWidgetExtension */;
+			targetProxy = C4B4548525346ADB00E17579 /* PBXContainerItemProxy */;
+		};
+		C4B454A3253480A900E17579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4549C253480A900E17579 /* QuoteShuffleService */;
+			targetProxy = C4B454A2253480A900E17579 /* PBXContainerItemProxy */;
+		};
+		C4B454AD253480BD00E17579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4549C253480A900E17579 /* QuoteShuffleService */;
+			targetProxy = C4B454AC253480BD00E17579 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C48D6BBE25543352006CBB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShuflerrClip/ShuflerrClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"ShuflerrClip/Preview Content\"";
+				DEVELOPMENT_TEAM = FK85K586DJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShuflerrClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C48D6BBF25543352006CBB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShuflerrClip/ShuflerrClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"ShuflerrClip/Preview Content\"";
+				DEVELOPMENT_TEAM = FK85K586DJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShuflerrClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		C4A723372521F38000F92F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,12 +776,14 @@
 		C4A7233A2521F38000F92F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8QHCL647Y;
+				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QuoteShuffle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -356,22 +791,24 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.QuoteShuffle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C4A7233B2521F38000F92F0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8QHCL647Y;
+				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QuoteShuffle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -379,16 +816,128 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.QuoteShuffle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C4B4548925346ADB00E17579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = FK85K586DJ;
+				INFOPLIST_FILE = QuoteShuffleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler.ShufflerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C4B4548A25346ADB00E17579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = FK85K586DJ;
+				INFOPLIST_FILE = QuoteShuffleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.Shuffler.ShufflerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C4B454A7253480A900E17579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y8QHCL647Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuoteShuffleService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.QuoteShuffleService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4B454A8253480A900E17579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y8QHCL647Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuoteShuffleService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.QuoteShuffleService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C48D6BBD25543352006CBB3F /* Build configuration list for PBXNativeTarget "ShuflerrClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48D6BBE25543352006CBB3F /* Debug */,
+				C48D6BBF25543352006CBB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4A723252521F37F00F92F0D /* Build configuration list for PBXProject "QuoteShuffle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -403,6 +952,24 @@
 			buildConfigurations = (
 				C4A7233A2521F38000F92F0D /* Debug */,
 				C4A7233B2521F38000F92F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B4548B25346ADB00E17579 /* Build configuration list for PBXNativeTarget "QuoteShuffleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B4548925346ADB00E17579 /* Debug */,
+				C4B4548A25346ADB00E17579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B454A6253480A900E17579 /* Build configuration list for PBXNativeTarget "QuoteShuffleService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B454A7253480A900E17579 /* Debug */,
+				C4B454A8253480A900E17579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
