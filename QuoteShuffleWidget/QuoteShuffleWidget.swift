@@ -11,25 +11,21 @@ import Intents
 import QuoteShuffleService
 
 
-struct Provider: IntentTimelineProvider {
+struct Provider: TimelineProvider {
     let service = QuoteService()
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), quote: service.getRandomQuote(), configuration: ConfigurationIntent())
-    }
-
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), quote: service.getRandomQuote(), configuration: configuration)
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
+        let entry = SimpleEntry(date: Date(), quote: service.getRandomQuote())
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
         var entries: [SimpleEntry] = []
 
         let currentDate = Date()
         for hourOffset in 0 ..< 24 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
             let quote =  service.getRandomQuote()
-            var entry = SimpleEntry(date: entryDate, quote: quote, configuration: configuration)
+            var entry = SimpleEntry(date: entryDate, quote: quote)
             entry.colors = service.getColors(quote)
             entries.append(entry)
         }
@@ -37,13 +33,17 @@ struct Provider: IntentTimelineProvider {
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
+
+
+    func placeholder(in context: Context) -> SimpleEntry {
+        SimpleEntry(date: Date(), quote: service.getRandomQuote())
+    }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let quote: Quote
     var colors: [Color] = [Color.black, Color.black]
-    let configuration: ConfigurationIntent
 }
 
 
@@ -93,9 +93,8 @@ struct QuoteShuffleWidgetEntryView : View {
 @main
 struct QuoteShuffleWidget: Widget {
     let kind: String = "QuoteShuffleWidget"
-
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
             QuoteShuffleWidgetEntryView(entry: entry)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(
@@ -109,7 +108,6 @@ struct QuoteShuffleWidget: Widget {
                             .opacity(0.64)
                     }
                 )
-
         }
         .supportedFamilies([.systemMedium, .systemLarge])
         .configurationDisplayName("Shuflerr")
@@ -119,7 +117,7 @@ struct QuoteShuffleWidget: Widget {
 
 struct QuoteShuffleWidget_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteShuffleWidgetEntryView(entry: SimpleEntry(date: Date(), quote: QuoteService().getRandomQuote(), configuration: ConfigurationIntent()))
+        QuoteShuffleWidgetEntryView(entry: SimpleEntry(date: Date(), quote: QuoteService().getRandomQuote()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
