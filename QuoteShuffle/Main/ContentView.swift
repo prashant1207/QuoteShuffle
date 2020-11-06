@@ -48,7 +48,7 @@ struct ContentView: View {
                 }.allowsHitTesting(false)
 
                 if showingAlert {
-                    FloatingAlert(showingNotice: $showingAlert, text: "Saved")
+                    FloatingAlert(showingNotice: $showingAlert, icon: "checkmark.circle", text: "Saved")
                 }
             }.background(
                 Image(backgroundImage)

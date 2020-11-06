@@ -11,6 +11,9 @@
 		C482326725555F5300920E06 /* QuoteShuffleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; };
 		C482326825555F5300920E06 /* QuoteShuffleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C482327825556F3400920E06 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327725556F3400920E06 /* ContentViewModel.swift */; };
+		C482327C2555736D00920E06 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327B2555736D00920E06 /* GestureView.swift */; };
+		C48232802555737900920E06 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327F2555737900920E06 /* ControlView.swift */; };
+		C48232842555739500920E06 /* FloatingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48232832555739500920E06 /* FloatingAlertView.swift */; };
 		C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EB252F2ACB004457AB /* QuoteView.swift */; };
 		C48529EF252F2AF3004457AB /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EE252F2AF3004457AB /* HelperView.swift */; };
 		C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529F1252F2BED004457AB /* BottomSheetView.swift */; };
@@ -139,6 +142,9 @@
 		C4164B722523488000CDF36B /* QuoteShuffle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuoteShuffle.entitlements; sourceTree = "<group>"; };
 		C4164B742523488100CDF36B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C482327725556F3400920E06 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C482327B2555736D00920E06 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		C482327F2555737900920E06 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		C48232832555739500920E06 /* FloatingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlertView.swift; sourceTree = "<group>"; };
 		C48529EB252F2ACB004457AB /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		C48529EE252F2AF3004457AB /* HelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperView.swift; sourceTree = "<group>"; };
 		C48529F1252F2BED004457AB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
@@ -242,6 +248,9 @@
 				C48529EB252F2ACB004457AB /* QuoteView.swift */,
 				C48529EE252F2AF3004457AB /* HelperView.swift */,
 				C48529F1252F2BED004457AB /* BottomSheetView.swift */,
+				C482327B2555736D00920E06 /* GestureView.swift */,
+				C482327F2555737900920E06 /* ControlView.swift */,
+				C48232832555739500920E06 /* FloatingAlertView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,14 +587,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48232842555739500920E06 /* FloatingAlertView.swift in Sources */,
 				C4B4549525346E7600E17579 /* Colors.swift in Sources */,
 				C404D876254AECCD0069C49E /* Configurator.swift in Sources */,
+				C482327C2555736D00920E06 /* GestureView.swift in Sources */,
 				C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */,
 				C48D6BA625541747006CBB3F /* Resource.swift in Sources */,
 				C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */,
 				C48529EF252F2AF3004457AB /* HelperView.swift in Sources */,
 				C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */,
 				C482327825556F3400920E06 /* ContentViewModel.swift in Sources */,
+				C48232802555737900920E06 /* ControlView.swift in Sources */,
 				C4A723302521F37F00F92F0D /* ContentView.swift in Sources */,
 				C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */,
 				C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */,
