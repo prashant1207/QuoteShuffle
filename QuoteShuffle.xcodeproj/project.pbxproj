@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C404D876254AECCD0069C49E /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C404D875254AECCD0069C49E /* Configurator.swift */; };
-		C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4164B742523488100CDF36B /* HealthKit.framework */; };
+		C482326725555F5300920E06 /* QuoteShuffleService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; };
+		C482326825555F5300920E06 /* QuoteShuffleService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4B4549D253480A900E17579 /* QuoteShuffleService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C482327825556F3400920E06 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482327725556F3400920E06 /* ContentViewModel.swift */; };
 		C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EB252F2ACB004457AB /* QuoteView.swift */; };
 		C48529EF252F2AF3004457AB /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529EE252F2AF3004457AB /* HelperView.swift */; };
 		C48529F2252F2BED004457AB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48529F1252F2BED004457AB /* BottomSheetView.swift */; };
@@ -48,6 +50,13 @@
 			remoteGlobalIDString = C4B4549C253480A900E17579;
 			remoteInfo = QuoteShuffleService;
 		};
+		C482326925555F5300920E06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4549C253480A900E17579;
+			remoteInfo = QuoteShuffleService;
+		};
 		C48D6BBA25543351006CBB3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4A723222521F37F00F92F0D /* Project object */;
@@ -79,6 +88,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C482326B25555F5300920E06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C482326825555F5300920E06 /* QuoteShuffleService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C48D6BC025543352006CBB3F /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,6 +138,7 @@
 		C404D875254AECCD0069C49E /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		C4164B722523488000CDF36B /* QuoteShuffle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuoteShuffle.entitlements; sourceTree = "<group>"; };
 		C4164B742523488100CDF36B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C482327725556F3400920E06 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C48529EB252F2ACB004457AB /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		C48529EE252F2AF3004457AB /* HelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperView.swift; sourceTree = "<group>"; };
 		C48529F1252F2BED004457AB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
@@ -158,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C482326725555F5300920E06 /* QuoteShuffleService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +187,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4164B752523488100CDF36B /* HealthKit.framework in Frameworks */,
 				C4B454A4253480A900E17579 /* QuoteShuffleService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +226,14 @@
 				C4B4547A25346ADA00E17579 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C482327625556F2300920E06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C482327725556F3400920E06 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C48529EA252F2AB3004457AB /* View */ = {
@@ -291,6 +320,7 @@
 		C4A7232C2521F37F00F92F0D /* QuoteShuffle */ = {
 			isa = PBXGroup;
 			children = (
+				C482327625556F2300920E06 /* ViewModel */,
 				C404D874254AECBC0069C49E /* Configurator */,
 				C48529EA252F2AB3004457AB /* View */,
 				C4A1830D252CE9A800F45488 /* Utility */,
@@ -380,11 +410,13 @@
 				C48D6BA925543350006CBB3F /* Sources */,
 				C48D6BAA25543350006CBB3F /* Frameworks */,
 				C48D6BAB25543350006CBB3F /* Resources */,
+				C482326B25555F5300920E06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C4580A1E2554396B00A9741B /* PBXTargetDependency */,
+				C482326A25555F5300920E06 /* PBXTargetDependency */,
 			);
 			name = ShuflerrClip;
 			productName = ShuflerrClip;
@@ -553,6 +585,7 @@
 				C48529EC252F2ACB004457AB /* QuoteView.swift in Sources */,
 				C48529EF252F2AF3004457AB /* HelperView.swift in Sources */,
 				C4B4548425346ADB00E17579 /* QuoteShuffleWidget.intentdefinition in Sources */,
+				C482327825556F3400920E06 /* ContentViewModel.swift in Sources */,
 				C4A723302521F37F00F92F0D /* ContentView.swift in Sources */,
 				C4A1830F252CE9B600F45488 /* Swipe.swift in Sources */,
 				C4A7232E2521F37F00F92F0D /* QuoteShuffleApp.swift in Sources */,
@@ -586,6 +619,11 @@
 			target = C4B4549C253480A900E17579 /* QuoteShuffleService */;
 			targetProxy = C4580A1D2554396B00A9741B /* PBXContainerItemProxy */;
 		};
+		C482326A25555F5300920E06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4549C253480A900E17579 /* QuoteShuffleService */;
+			targetProxy = C482326925555F5300920E06 /* PBXContainerItemProxy */;
+		};
 		C48D6BBB25543351006CBB3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C48D6BAC25543350006CBB3F /* ShuflerrClip */;
@@ -616,7 +654,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ShuflerrClip/ShuflerrClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ShuflerrClip/Preview Content\"";
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
@@ -640,7 +678,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ShuflerrClip/ShuflerrClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ShuflerrClip/Preview Content\"";
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
@@ -781,7 +819,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
@@ -806,7 +844,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuoteShuffle/QuoteShuffle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"QuoteShuffle/Preview Content\"";
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				ENABLE_PREVIEWS = YES;
@@ -829,7 +867,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				INFOPLIST_FILE = QuoteShuffleWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -851,7 +889,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = FK85K586DJ;
 				INFOPLIST_FILE = QuoteShuffleWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -872,7 +910,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y8QHCL647Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -885,7 +923,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.QuoteShuffleService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.ShufflerService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -902,7 +940,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y8QHCL647Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -915,7 +953,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.QuoteShuffleService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashanttiwari.ShufflerService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;

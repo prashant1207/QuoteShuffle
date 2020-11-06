@@ -96,3 +96,87 @@ struct FloatingAlert: View {
         })
     }
 }
+
+struct GestureView: View {
+    var onTapAction:((Tap) -> Void)
+    var onSwipeAction:((Swipe) -> Void)
+
+    struct OverlayRectangle: View {
+        var body: some View {
+            Rectangle()
+                .fill(Color.black).opacity(0.1)
+        }
+    }
+
+    var body: some View {
+        VStack(alignment: .center, spacing: 0) {
+            OverlayRectangle()
+                .frame(height: 160, alignment: .top)
+                .onTapGesture {
+                    onTapAction(.top)
+                }
+            HStack(alignment: .center, spacing: 0) {
+                OverlayRectangle()
+                    .frame(maxHeight: .infinity, alignment: .leading)
+                    .onTapGesture {
+                        onTapAction(.left)
+                    }
+                OverlayRectangle()
+                    .frame(maxHeight: .infinity, alignment: .trailing)
+                    .onTapGesture {
+                        onTapAction(.right)
+                    }
+            }.gesture(
+                DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
+                    .onEnded({ value in
+                        onSwipeAction(Swipe.swipeType(value.translation))
+                    })
+            )
+        }
+    }
+}
+
+struct ControlView: View {
+    var onShareTapped: (() -> Void)
+    var onDownloadTapped: (() -> Void)
+
+    struct ControlButtonView: View {
+        var icon: String
+        var text: String
+        var onTapped: (() -> Void)
+
+        var body: some View {
+            Button(action: {
+                onTapped()
+            }) {
+                HStack(spacing: 10) {
+                    Image(systemName: icon)
+                    Text(text)
+                }
+            }
+            .foregroundColor(Resource.Shades.buttonForeground)
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(RoundedRectangle(cornerRadius: 8.0)
+                            .fill(Resource.Shades.buttonColor))
+        }
+    }
+
+    var body: some View {
+        VStack {
+            VStack {
+                ControlButtonView(icon: "square.and.arrow.up", text: "Share") {
+                    onShareTapped()
+                }
+
+                ControlButtonView(icon: "square.and.arrow.down", text: "Download") {
+                    onDownloadTapped()
+                }
+            }
+
+            QuoteShuffleLogoView()
+        }
+        .background(Rectangle().fill(Color.clear))
+        .padding()
+    }
+}

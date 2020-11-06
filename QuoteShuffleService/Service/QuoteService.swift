@@ -13,7 +13,7 @@ public struct QuoteService {
     var quotes: [Quote] = []
     public init() {
         guard
-            let bundle = Bundle(identifier: "com.prashanttiwari.QuoteShuffleService"),
+            let bundle = Bundle(identifier: "com.prashanttiwari.ShufflerService"),
             let path = bundle.path(forResource: "quotes", ofType: "json"),
             let data = try? String(contentsOfFile: path).data(using: .utf8) else {
             return

@@ -35,3 +35,11 @@ enum Swipe {
         return result
     }
 }
+
+enum Tap {
+    case top
+    case left
+    case right
+    case bottom
+}
+

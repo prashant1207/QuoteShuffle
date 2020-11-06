@@ -8,14 +8,11 @@
 import Foundation
 import UIKit
 // MARK: - enum GMDColorType
-/// Currently, there are **21** colors in total.
 ///
 /// They are: Red, Pink, Purple, DeepPurple, Indigo, Blue, LightBlue, Cyan, Teal, Green, LightGreen, Lime, Yellow, Amber, Orange, DeepOrange, Brown, Grey, BlueGrey, Black and White.
 public enum GMDColorType: Int{
     case Red, Pink, Purple, DeepPurple, Indigo, Blue, LightBlue, Cyan, Teal, Green, LightGreen, Lime, Yellow, Amber, Orange, DeepOrange, Brown, Grey, BlueGrey, Black, White;
 
-    /// The total number of Google Material Design Color Type.
-    /// Currently, there are 21 colors in total.
     static var count: Int{
         return GMDColorType.White.rawValue + 1
     }
@@ -51,7 +48,6 @@ public enum GMDColorType: Int{
         }
     }
 
-    /// The Primary Color Count of the Google Material Design Color Type
     var primaryLevelCount: Int{
         switch self{
         case .Black, .White:
@@ -61,7 +57,6 @@ public enum GMDColorType: Int{
         }
     }
 
-    /// TheAccent Color Count of the Google Material Design Color Type
     var accentLevelCount: Int{
         if self.rawValue < GMDColorType.accentCount{
             return GMDColorAccentLevel.count
