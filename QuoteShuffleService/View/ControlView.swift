@@ -29,12 +29,13 @@ public struct ControlView: View {
                     Image(systemName: icon)
                     Text(text)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .foregroundColor(Resource.Shades.buttonForeground)
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(RoundedRectangle(cornerRadius: 8.0)
-                            .fill(Resource.Shades.buttonColor))
+            .background(Resource.Shades.buttonColor)
+            .cornerRadius(8.0)
         }
     }
 
